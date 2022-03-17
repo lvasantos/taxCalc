@@ -15,13 +15,7 @@ class Luciana{
                     let response = try JSONDecoder().decode(Response.self, from: data)
                     usdBuy = response.results.currencies.usd.buy
                     CFRunLoopStop(runLoop)
-                    
-//                    while readLine() != "e" {
-//
-//                    }
-//
-//                    exit(EXIT_SUCCESS)
-                    
+                  
                     
                 }catch {
                     print(error)
@@ -39,8 +33,31 @@ class Luciana{
 //        -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
 
 
-        print("Insira o valor em Reais para ser convertido: ")
-        
+        print(
+            """
+                                    .-'￣￣`'.
+                                   /          \\
+                                  |            ;
+                         _.._     |            |
+                    .--'`    '    | 0) ˜ (0)   |
+              ＿'￣￣          .＿`)      '--.   \\
+             (
+              `.'
+            _ ＿) )
+            `___ '
+            ▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
+            
+                      |￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣|
+                                 ᴄᴀʟᴄᴜʟᴇ
+                                ꜱᴜᴀ ᴛᴀxᴀ 💰
+                      |＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿|
+                          ⠀(\\__/) ||
+                     ⠀⠀⠀⠀⠀⠀(•ㅅ•) ||
+                      ⠀⠀⠀⠀⠀⠀/ 　 づ
+            ▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
+            
+            """)
+        print("Insira o valor que você quer receber em reais: ", terminator: "")
         
         let entradaDouble = Double(readLine(strippingNewline: true)!)
         print("Entrada inserida foi: \(entradaDouble!)")
@@ -51,14 +68,27 @@ class Luciana{
         let conversaoPUsd = entradaDouble! / valorDolar
         let taxaVariavel = conversaoPUsd * 0.064
         let taxaFixa = 0.60
-        let valorFinalUsd = conversaoPUsd + taxaFixa + taxaVariavel
+        let valorFinalUsd = String(format: "%.2f", conversaoPUsd + taxaFixa + taxaVariavel)
         
         
 
-        print(String(format: "%.2f", valorFinalUsd))
+        print("""
+        //
+        //              ＿＿     /￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣/
+        //　　　　　／＞　　  フ     Invoice de: $\(valorFinalUsd)
+        //　　　　　| 　_   _|  <＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿/
+        //　 　　　／` ミ＿xノ
+        //　　 　 /　　　 　 |
+        //　　　 /　 ヽ　　 ﾉ    <￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣/
+        //　 　 │　　 |　|　|    /   Perde $\(String(format:"%.2f",  taxaVariavel + taxaFixa)) em taxas
+        //　／￣|　　 |　|　|   /＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿/
+        //　| (￣ヽ＿_ヽ_)__)
+        //　＼二つ
+        //
+        """)
 //        -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
     }
-    
+
 }
 
 // MARK: - Response

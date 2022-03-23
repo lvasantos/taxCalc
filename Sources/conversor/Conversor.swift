@@ -1,8 +1,8 @@
 import Foundation
 
-class Conversor{
+public class Conversor{
 
-    func dolar() -> Double{
+    public func dolar() -> Double{
         //makeRequest
         
         let runLoop = CFRunLoopGetCurrent()
@@ -27,7 +27,7 @@ class Conversor{
         return usdBuy
     }
     
-        func outAns(inputDouble:Double){
+        public func outAns(inputDouble:Double){
             //Output, waiting better ideas.
             //        Todos os valores em USD
             let valorDolar = dolar()
@@ -59,7 +59,7 @@ class Conversor{
 
 
 // MARK: - Response
-struct Response: Codable {
+public struct Response: Codable {
     let by: String
     let validKey: Bool
     let results: Results
@@ -76,7 +76,7 @@ struct Response: Codable {
 }
 
 // MARK: - Results
-struct Results: Codable {
+public struct Results: Codable {
     
     let currencies: Currencies
     let availableSources: [String]
@@ -88,7 +88,7 @@ struct Results: Codable {
 }
 
 // MARK: - Currencies
-struct Currencies: Codable {
+public struct Currencies: Codable {
     let source: String
     let usd, eur, gbp: Ars
 
@@ -101,7 +101,7 @@ struct Currencies: Codable {
     }
 }
 
-struct Ars: Codable {
+public struct Ars: Codable {
     let name: String
     let buy: Double
     let sell: Double?

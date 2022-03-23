@@ -8,6 +8,7 @@
 import Foundation
 
 public class App {
+    public init(){}
     public func main(){
     //        Data input
         let conversor = Conversor()

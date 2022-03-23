@@ -3,7 +3,7 @@ import Foundation
 public class Conversor{
 
     public func dolar() -> Double{
-        //makeRequest
+        //makeRequest url, decode e map.
         
         let runLoop = CFRunLoopGetCurrent()
         var usdBuy = 0.0
@@ -30,11 +30,11 @@ public class Conversor{
         public func outAns(inputDouble:Double){
             //Output, waiting better ideas.
             //        Todos os valores em USD
-            let valorDolar = dolar()
-            let conversaoPUsd = inputDouble / valorDolar
-            let taxaVariavel = conversaoPUsd * 0.064
-            let taxaFixa = 0.60
-            let valorFinalUsd = String(format: "%.2f", conversaoPUsd + taxaFixa + taxaVariavel)
+            let valorDolar      = dolar()
+            let conversaoPUsd   = inputDouble / valorDolar
+            let taxaVariavel    = conversaoPUsd * 0.064
+            let taxaFixa        = 0.60
+            let valorFinalUsd   = String(format: "%.2f", conversaoPUsd + taxaFixa + taxaVariavel)
             
             
             
@@ -52,7 +52,6 @@ public class Conversor{
                 //　＼二つ
                 //
                 """)
-            //        -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
         }
         
     }
@@ -101,6 +100,7 @@ public struct Currencies: Codable {
     }
 }
 
+//MARK: - Ars
 public struct Ars: Codable {
     let name: String
     let buy: Double

@@ -7,8 +7,7 @@
 
 import Foundation
 
-public class App {
-    public init(){}
+public struct App {
     public func main(){
     //        Data input
         let conversor = Conversor()

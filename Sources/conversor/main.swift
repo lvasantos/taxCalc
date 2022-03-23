@@ -7,5 +7,5 @@
 
 import Foundation
 
-let luciana = Luciana()
-luciana.app()
+let app = App()
+app.main()

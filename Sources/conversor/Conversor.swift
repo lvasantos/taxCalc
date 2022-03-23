@@ -1,9 +1,9 @@
 import Foundation
 
-class Luciana{
+class Conversor{
 
-    
     func dolar() -> Double{
+        //makeRequest
         
         let runLoop = CFRunLoopGetCurrent()
         var usdBuy = 0.0
@@ -27,59 +27,36 @@ class Luciana{
         return usdBuy
     }
     
-    func app(){
-        
-
-//        -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
-
-
-        print(
-            """
-            ▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
+        func outAns(inputDouble:Double){
+            //Output, waiting better ideas.
+            //        Todos os valores em USD
+            let valorDolar = dolar()
+            let conversaoPUsd = inputDouble / valorDolar
+            let taxaVariavel = conversaoPUsd * 0.064
+            let taxaFixa = 0.60
+            let valorFinalUsd = String(format: "%.2f", conversaoPUsd + taxaFixa + taxaVariavel)
             
-                      |￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣|
-                                 ᴄᴀʟᴄᴜʟᴇ
-                                ꜱᴜᴀ ᴛᴀxᴀ 💰
-                      |＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿|
-                          ⠀(\\__/) ||
-                     ⠀⠀⠀⠀⠀⠀(•ㅅ•) ||
-                      ⠀⠀⠀⠀⠀⠀/ 　 づ
-            ▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
             
-            """)
-        print("Insira o valor que você quer receber em reais: ", terminator: "")
+            
+            print("""
+                //
+                //              ＿＿     /￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣/
+                //　　　　　／＞　　  フ     Invoice de: $\(valorFinalUsd)
+                //　　　　　| 　_   _|  <＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿/
+                //　 　　　／` ミ＿xノ
+                //　　 　 /　　　 　 |
+                //　　　 /　 ヽ　　 ﾉ    <￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣/
+                //　 　 │　　 |　|　|    /   Perde $\(String(format:"%.2f",  taxaVariavel + taxaFixa)) em taxas
+                //　／￣|　　 |　|　|   /＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿/
+                //　| (￣ヽ＿_ヽ_)__)
+                //　＼二つ
+                //
+                """)
+            //        -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+        }
         
-        let entradaDouble = Double(readLine(strippingNewline: true)!)
-        print("Entrada inserida foi: \(entradaDouble!)")
-
-
-//        Todos os valores em USD
-        let valorDolar = dolar()
-        let conversaoPUsd = entradaDouble! / valorDolar
-        let taxaVariavel = conversaoPUsd * 0.064
-        let taxaFixa = 0.60
-        let valorFinalUsd = String(format: "%.2f", conversaoPUsd + taxaFixa + taxaVariavel)
-        
-        
-
-        print("""
-        //
-        //              ＿＿     /￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣/
-        //　　　　　／＞　　  フ     Invoice de: $\(valorFinalUsd)
-        //　　　　　| 　_   _|  <＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿/
-        //　 　　　／` ミ＿xノ
-        //　　 　 /　　　 　 |
-        //　　　 /　 ヽ　　 ﾉ    <￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣/
-        //　 　 │　　 |　|　|    /   Perde $\(String(format:"%.2f",  taxaVariavel + taxaFixa)) em taxas
-        //　／￣|　　 |　|　|   /＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿/
-        //　| (￣ヽ＿_ヽ_)__)
-        //　＼二つ
-        //
-        """)
-//        -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
     }
 
-}
 
 // MARK: - Response
 struct Response: Codable {

@@ -2,22 +2,18 @@
 # Oi, oi!  👋
 
 
- 
-
-
 # Calculadora de taxas
 Calculadora de taxas USD para cobrança de invoice pelo PayPal.
 
 
+### Como usar ?
 
-## FAQ
+Instalar o package indo em File -> Add Packages..
+ e utilizar a url para adicionar o spm.
+ 
+ <img width="842" alt="Screen Shot 2022-03-28 at 13 54 36" src="https://user-images.githubusercontent.com/82406248/160448527-e4f85c54-d60a-47fa-9ed1-2ea58e4304d2.png">
 
-#### Qual o cambio do dolar ?
-
-O valor do dolar é calculado como o dolar de cambio comercial.
-
-#### Como usar ?
-
+e fazer a chamada do App.
 Quando o programa é chamado ele pede o valor que você quer receber em reais.
 
             ▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
@@ -45,6 +41,14 @@ Faz os devidos calculos e devolve o valor que deve ser cobrado e informa o valor
                 //　| (￣ヽ＿_ヽ_)__)
                 //　＼二つ
                 //
+
+
+## FAQ
+
+#### Qual o cambio do dolar ?
+
+O valor do dolar é calculado como o dolar de cambio comercial.
+
 ## Feedback
 
 Feedbacks diretamente com a dona Luciana. Facilmente encontrada na ponta do lab01.

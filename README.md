@@ -5,6 +5,11 @@
 # Calculadora de taxas
 Calculadora de taxas USD para cobrança de invoice pelo PayPal.
 
+O package foi utilizado na integração de todos os projetos da equipe e pode ser utilizado facilmente por um menu.
+
+Basta clonar o repositorio e utilizar.
+
+https://github.com/talesvalente/Apple-Developer-Academy/tree/main/Trabalhos%20em%20Equipe/CLB%20-%20Swift
 
 ### Como usar ?
 
@@ -13,8 +18,10 @@ Instalar o package indo em File -> Add Packages..
  
  <img width="842" alt="Screen Shot 2022-03-28 at 13 54 36" src="https://user-images.githubusercontent.com/82406248/160448527-e4f85c54-d60a-47fa-9ed1-2ea58e4304d2.png">
 
-e fazer a chamada do App.
-Quando o programa é chamado ele pede o valor que você quer receber em reais.
+
+## Fazendo a chamada do App.
+
+Quando o programa é iniciado ele pede o valor que você quer receber em reais.
 
             ▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
             
@@ -27,7 +34,7 @@ Quando o programa é chamado ele pede o valor que você quer receber em reais.
                       ⠀⠀⠀⠀⠀⠀/ 　 づ
             ▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
 
-Faz os devidos calculos e devolve o valor que deve ser cobrado e informa o valor perdido em taxas. Os valores devolvidos em USD.
+Faz os devidos calculos, utilizando o valor comercial do dolar no momento e devolve o valor que deve ser cobrado e informa o valor perdido com taxas, variaveis e fixas. Os valores são devolvidos em USD.
 
                 //
                 //              ＿＿     /￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣/
@@ -50,9 +57,7 @@ Faz os devidos calculos e devolve o valor que deve ser cobrado e informa o valor
 O valor do dolar é calculado como o dolar de cambio comercial.
 
 ## Feedback
-
-Feedbacks diretamente com a dona Luciana. Facilmente encontrada na ponta do lab01.
-
+Pode ser contribuido pelos issues, qualquer duvida entrar em contato.
 
 ## Authors
 

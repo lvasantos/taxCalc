@@ -9,8 +9,9 @@ O package foi utilizado na integração de todos os projetos da equipe e pode se
 
 Basta clonar o repositorio e utilizar.
 
-https://github.com/talesvalente/Apple-Developer-Academy/tree/main/Trabalhos%20em%20Equipe/CLB%20-%20Swift
-
+`bash
+git clone https://github.com/lvasantos/taxCalc.git
+`
 ### Como usar ?
 
 Instalar o package indo em File -> Add Packages..

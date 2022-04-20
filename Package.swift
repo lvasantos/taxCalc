@@ -5,6 +5,7 @@ import PackageDescription
 
 let package = Package(
     name: "conversor",
+    platforms: [.macOS(.v12)],
     products: [
             .library(name: "conversor", targets:["conversor"]),
             .executable(name: "conversorExec", targets: ["conversorExec"])

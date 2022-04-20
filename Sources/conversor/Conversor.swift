@@ -29,10 +29,10 @@ public class Conversor {
                 let USD = response.results.currencies.usd.buy
                 let EUR = response.results.currencies.eur.buy
     
-                print(USD,EUR)
+
                 return (USD, EUR)
             }
-            print("Erro GetCurrency")
+            print("Error GetCurrency")
             return nil
         }
     

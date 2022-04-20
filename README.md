@@ -5,12 +5,18 @@
 # Calculadora de taxas
 Calculadora de taxas USD para cobrança de invoice pelo PayPal.
 
-O package foi utilizado na integração de todos os projetos da equipe e pode ser utilizado facilmente por um menu.
+
+![ezgif-1-1c9eb1475e](https://user-images.githubusercontent.com/82406248/161778995-ee308302-0b39-46ea-9078-cdcce2279791.gif)
+
+
+
+O package foi utilizado na integração de todos os projetos da equipe de CBL e pode ser utilizado facilmente também por um menu.
 
 Basta clonar o repositorio e utilizar.
 
-https://github.com/talesvalente/Apple-Developer-Academy/tree/main/Trabalhos%20em%20Equipe/CLB%20-%20Swift
-
+`bash
+git clone https://github.com/lvasantos/taxCalc.git
+`
 ### Como usar ?
 
 Instalar o package indo em File -> Add Packages..
@@ -49,8 +55,8 @@ Faz os devidos calculos, utilizando o valor comercial do dolar no momento e devo
                 //　＼二つ
                 //
 
-
 ## FAQ
+
 
 #### Qual o cambio do dolar ?
 
